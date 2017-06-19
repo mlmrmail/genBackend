@@ -1,0 +1,30 @@
+{
+  "name": "generatorsbackend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlmrmail/genBackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mlmrmail/genBackend/issues"
+  },
+  "homepage": "https://github.com/mlmrmail/genBackend#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "mongoskin": "^2.1.0"
+  }
+}
