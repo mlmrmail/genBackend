@@ -14,10 +14,9 @@ const app = express();
 app.use('/login', require('./lib/routes/login')(defaultRouter()));
 
 
-const l = require('./lib/controllers/login/normalLoging');
+// const l = require('./lib/controllers/login/normalLoging');
 
-l.validateLogin('test', 'pwd');
-
+// l.validateLogin('test', 'pwd');
 
 
 const PORT = 8081;
@@ -25,18 +24,3 @@ const PORT = 8081;
 app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
 });
-
-process.stdin.resume();
-
-function exitHandler() {
-  // queue.stop(exitProcess);
-}
-
-function exitProcess() {
-//   logger.info('Exit with code 99');
-  process.exit(99);
-}
-
-process.on('exit', exitHandler.bind());
-process.on('SIGINT', exitHandler.bind());
-process.on('uncaughtException', exitHandler.bind());
