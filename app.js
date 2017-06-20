@@ -9,9 +9,7 @@ dotenv.config({ silent: true });
 
 const app = express();
 
-
-
-app.use('/login', require('./lib/routes/login')(defaultRouter()));
+app.use('/users/login', require('./lib/routes/users')(defaultRouter()));
 
 
 // const l = require('./lib/controllers/login/normalLoging');
